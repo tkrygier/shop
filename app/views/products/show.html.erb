@@ -1,0 +1,22 @@
+<p>
+  <strong>Nazwa:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Opis:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Cena:</strong>
+  <%= @product.price %>
+</p>
+
+<p>
+  <strong>Kategoria:</strong>
+  <%= @product.category_id %>
+</p>
+
+<%= link_to 'Edytuj produkt', edit_product_path(@product) %> |
+<%= link_to 'Powrót', categories_path %>
