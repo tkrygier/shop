@@ -15,8 +15,8 @@
 
 <p>
   <strong>Kategoria:</strong>
-  <%= @product.category_id %>
+  <%= Category.all.find(@product.category_id).name.to_s %>
 </p>
 
 <%= link_to 'Edytuj produkt', edit_product_path(@product) %> |
-<%= link_to 'Powrót', categories_path %>
+<%= link_to 'Powrót', category_path(@product.category_id) %>

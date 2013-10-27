@@ -1,9 +1,10 @@
 class ProductsController < ApplicationController
   def destroy
     @product = Product.find(params[:id])
+    @category = @product.category_id
     @product.destroy
 
-    redirect_to categories_path
+    redirect_to category_path(@category)
   end
 
   def update

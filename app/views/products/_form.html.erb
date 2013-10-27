@@ -24,11 +24,8 @@
     </p>
     <p>
       <%= f.label :kategoria %><br>
-      <% if Category.all.empty? then%>
-          <%= f.select :category_id, [["Wybierz kategorię", 0]] %><br>
-      <% else %>
-          <%= f.select :category_id, [["Wybierz kategorię", 0]].concat(Category.all.map{|category| [category.name.to_s, category.id]}) %><br>
-      <% end %>
+      <%= f.select :category_id, Category.all.map{|category| [category.name.to_s, category.id]} %><br>
+
     </p>
     <%= f.submit "OK" %>
     </p>

@@ -4,7 +4,7 @@
     <data-source source="LOCAL" name="Rails shop: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="c871c65a-f479-4b3e-b13d-acde2cdc03ae">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:shop_development</jdbc-url>
-      <user-name>postgres</user-name>
+      <user-name>shop</user-name>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
